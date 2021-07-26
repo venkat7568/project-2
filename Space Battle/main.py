@@ -111,7 +111,7 @@ while running:
             alienX_change[i] = -0.2
             alienY[i] += alienY_change[i]
         # Collision
-        collision = isCollision(alienX(i), alienY(i), bulletX, bulletY)
+        collision = isCollision(alienX(int(i)), alienY(int(i)), bulletX, bulletY)
         if collision:
             bulletY = 480
             bullet_state = "ready"
